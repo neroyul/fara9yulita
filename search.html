@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangtan Merchandise Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<script>
+    function cariBarang () {
+      const inputPencarian = document.getElementById('cariBarang');
+      const kataKunci = inputPencarian.value.toLowerCase ();
+      constproduk = document.querySelectorAll ('.product');
+      
+     for (const produkItem of produk) {
+       const namaProduk = produkItem.querySelector('h3') .textContent.toLowerCase ();
+       constdeskripsiProduk = produkItem.querySelector('p') .textContent.toLowerCase ();
+       
+      function tutupPopup () {
+        const popup = document.querySelector('.popup');
+        
+        if (popup) {
+         document.body.removeChild(popup);
+        }
+       }
+      }
+    }
+  </script>  
+  </body>
+</html>
