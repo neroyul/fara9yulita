@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangtan Merchandise Store</title>
+    <script src="halo.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<div class="small-container cart-page">
+    <div class="keranjang">
+        <h3>Keranjang Belanja</h3>
+        <ul id="daftar-keranjang"></ul>
+        <p>Total Belanja : <span id="total-belanja">Rp. 0.00</span></p>
+        <button id="checkout" onclick="checkout()">Checkout</button>
+      </div>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>Product</td>
+            <td><input type="number" value="1"></td>
+            <td>$00.00</td>
+        </tr>
+    </table>
+</div>
+
+.header .navbar {
+    width: 70%;
+    float: left;
+    font-family: sans-serif;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 5px;
+    position: relative;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after {
+    content: "";
+    height: 5px;
+    width: 0;
+    background: #b07fea;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
+
+  <!--dropdown-->
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  .navbar {
+    list-style: none;
+    background: #dccaf4 ;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .navbar li ul.dropdown li {
+    display: block;
+  }
+  
+  .navbar li ul.dropdown {
+    width: 100%;
+    background: #b07fea;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  
+  .navbar li a:hover {
+    background: #5d3675;
+  }
+  
+  .navbar li:hover ul.dropdown {
+    display: block;
+  }
